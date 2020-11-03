@@ -7,3 +7,4 @@ aws secretsmanager get-secret-value --secret-id $SECRET_NAME | jq -r '.SecretStr
 
 GIT_SSH_COMMAND="ssh -i /tmp/key -o StrictHostKeyChecking=no " git clone --mirror $SOURCE_REPO source
 cd source && git push --mirror $TARGET_REPO
+
